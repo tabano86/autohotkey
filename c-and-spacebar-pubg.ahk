@@ -4,11 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #IfWinActive TslGame
-Ctrl::
-send, c
-return
-
-#IfWinActive TslGame
-c::
-send, {Ctrl}
+space::
+send, {space}c
+sleep, 50
 return
